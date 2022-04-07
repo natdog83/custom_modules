@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="index" >
+            <t t-call="website.layout">
+                <t t-set="title">Home</t>
+
+
+          <div id="wrap" class="">
+
+            <!-- Intro -->
+            <div id="intro">
+                <div class="container">
+                    <div class="center_image row justify-content-md-center">
+                        <div class="col col-lg-2">
+                        </div>
+                        <div class="col-md-8">
+                          <img src="/theme_angryhorse/static/src/img/large_logo.png" class="center_image img-responsive" alt="Angry Horse Logo"/>
+                        </div>
+                        <div class="col col-lg-2">
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="tagline">
+                            BREWING EXCEPTIONAL CRAFT BEER IN THE HEART OF MONTEBELLO
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Us -->
+            <div id="about_us">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col col-lg-2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="content">
+                                <h3>
+                                        about us
+                                </h3>
+                                <!--<p>
+                                    In March of 2017, the Desert Brothers opened their first taproom and are now brewing
+                                    and serving independent craft beer in Montebello CA.
+                                </p>
+                                <p>
+                                    We pride ourselves on our classic, yet distint flavors; embracing the old world of
+                                    beer, through the lens of a new world approach. We aim to innovate and produce a 
+                                    quality, hand crafted product for any occation or culinary experience.
+                                </p>
+                                <p>
+                                    We strive to be a benefit corporation and purveyors of our community by embracing it 
+                                    and revitalizing it, through one craft beer at a time.
+                                </p>-->
+                                <p><strong>Cultivators</strong></p>
+                                <div class="white_line"></div>
+                                <p>
+                                    In 2016, the Desert Brothers, Nathan and James McCusker, 
+                                    launched Angry Horse Brewing. In March of 2017 they opened 
+                                    up their first taproom and are now brewing and serving 
+                                    artisan craft beer in Montebello, CA.
+                                </p>
+                                <p>
+                                    We are cultivators of classic, yet distinct flavors. We 
+                                    pride ourselves on our artisanal approach and aim to 
+                                    innovate. We aspire to produce a quality product that 
+                                    enhances any occasion or culinary experience. 
+                                </p>
+                                <p><strong>Purveyors</strong></p>
+                                <div class="white_line"></div>
+                                <p>
+                                    Angry Horse was founded on the idea of community and 
+                                    giving back. We are purveyors of our community. We are 
+                                    promoters of engagement amongst our community members. 
+                                    Together we continue to grow, to learn and support one 
+                                    another. 
+                                </p>
+                                <p><strong>Contributors</strong></p>
+                                <div class="white_line"></div>
+                                <p>
+                                    We are contributors to the Independent Beer Movement. 
+                                    We are revitalizing, shaping and building our community 
+                                    one craft beer at a time while striving to develop 
+                                    local and sustainable brewing practices. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-lg-2">
+                                  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Featured Beer -->
+            <!--<div id="featured">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col col-lg-2"></div>
+                        <div class="col-md-8">
+                            <div class="content">
+                                <h3>On Tap</h3>
+                                <div t-foreach="menus['items']" t-as="item">
+                                    <div class="beer_brands">
+                                        <p>
+                                            <span t-esc="item['name']" class="beer_title" /> 
+                                            <span t-esc="item['style']" class="beer_style" /><span class="beer_style beer_abv glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                                            <span t-esc="item['abv']" class="beer_abv" />% ABV <br />
+                                            <span t-esc="item['description']" class="beer_description" />
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col col-lg-2"></div>
+                    </div>
+                </div>
+            </div>-->
+            <div id="team">
+            <div class="container">
+              <div class="row justify-content-md-center">
+                <div class="col col-lg-2"></div>
+                  <div class="col-md-8">
+                    <div class="row content">                        <h3>Our Team</h3>
+                      <div class="white_line"></div>
+                      <div class="carousel slide multi-item-carousel" id="theCarousel">
+                        <div class="carousel-inner">
+                            <div t-foreach="employee_ids" t-as="employee" class="item">
+                                 <div class=" col col-md-4 team">
+                                    <img t-att-src="website.image_url(employee, 'image')" class="img-responsive empoyee_image" t-att-alt="employee.name"/>
+                                    <div t-field="employee.name" class="employee_name" />
+                                    <div t-field="employee.job_id" class="employee_title" />
+                                    <div class="white_line"></div>
+                                </div>
+                                <!--<div class="employee_more">Learn More</div>-->
+                            </div> 
+                        </div>
+                        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div> 
+                    </div>
+                  </div>
+                  <div class="col col-lg-2"></div>
+                </div>
+              </div>
+            </div>
+          <div id="instagram" class="row justify-content-center">
+          </div>
+        </div>  
+
+
+
+
+
+
+            </t>
+        </template>
+    </data>
+</odoo>
