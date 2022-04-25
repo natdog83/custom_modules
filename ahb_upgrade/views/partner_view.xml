@@ -5,7 +5,7 @@
 	        <field name="model">res.partner</field>
 	        <field name="inherit_id" ref="base.view_partner_form"/>
 	        <field name="arch" type="xml">
-				<xpath expr="//field[@name='mobile']" position="after">
+				<xpath expr="//field[@name='mobile']" position="before">
                 	<field id="old_id" name="old_id" placeholder="v9 ID" string="V9 ID"/>
             	</xpath>
 	        </field>
