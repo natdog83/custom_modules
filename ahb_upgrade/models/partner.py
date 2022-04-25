@@ -5,3 +5,4 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     old_id = fields.Char(string='Old ID')
+    imported = fields.Boolean()

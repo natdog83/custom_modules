@@ -7,7 +7,16 @@
 	        <field name="arch" type="xml">
 				<xpath expr="//group" position="inside">
 					<group>
-						<field id="old_id" name="old_id" placeholder="v9 ID" string="V9 ID"/>
+						<field id="old_id" name="old_id" placeholder="v9 ID" string="V9 ID">
+							<attribute name="attrs">
+    							{'readonly': [('editable', '=', False)]}
+  							</attribute>
+						</field>
+						<field id="imported" name="imported">
+							<attribute name="attrs">
+    							{'readonly': [('editable', '=', False)]}
+  							</attribute>
+						</field>
 					</group>
             	</xpath>
 	        </field>
