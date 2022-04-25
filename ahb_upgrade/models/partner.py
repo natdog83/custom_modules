@@ -4,5 +4,5 @@ class ResPartner(models.Model):
     _name = 'res.partner'
     _inherit = 'res.partner'
 
-    old_id = fields.Char(string='Old ID')
-    imported = fields.Boolean()
+    old_id = fields.Char(string='Old ID', readonly=True)
+    imported = fields.Boolean(readonly=True)

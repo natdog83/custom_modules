@@ -11,12 +11,10 @@
 								id="old_id"
 								name="old_id"
 								placeholder="v9 ID"
-								string="V9 ID"
-								attrs="{'readonly': [('editable', '=', False)]}" />
+								string="V9 ID" />
 						<field
 								id="imported"
-								name="imported"
-								attrs="{'readonly': [('editable', '=', False)]}" />
+								name="imported" />
 					</group>
             	</xpath>
 	        </field>
