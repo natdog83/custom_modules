@@ -6,9 +6,7 @@
 	        <field name="inherit_id" ref="base.view_partner_form"/>
 	        <field name="arch" type="xml">
 				<xpath expr="//group" position="inside">
-					<group>
                 		<field id="old_id" name="old_id" placeholder="v9 ID" string="V9 ID"/>
-					</group>
             	</xpath>
 	        </field>
 	    </record>
