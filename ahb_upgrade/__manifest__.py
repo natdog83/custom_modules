@@ -2,14 +2,12 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'Brewery Management Application',
+    'name': 'AHB Upgrade',
     'version': '1.0',
     'category': 'Manufacturing',
-    'summary': 'This application is to turn Odoo into a brewery management software',
+    'summary': 'This modules addes fields to the account and product modules to link them to the v9',
     'description': """
-This application adds fundtionality to the manufacturing module to 
-track batches of beer, to track turns of the brewhouse and to track analytics 
-of the entire process. 
+
     """,
     'depends': [],
     'data': [
