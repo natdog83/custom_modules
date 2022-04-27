@@ -1,7 +1,7 @@
 from odoo import api, fields, models
 
-class ResUser(models.Model):
-    _name = 'res.user'
-    _inherit = 'res.user'
+class ResUsers(models.Model):
+    _name = 'res.users'
+    _inherit = 'res.users'
 
     old_id = fields.Char(string='Old ID', readonly=True)
